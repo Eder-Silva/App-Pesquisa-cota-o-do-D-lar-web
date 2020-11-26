@@ -1,0 +1,67 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>App Pesquisa Cotação do Dólar</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+		<script src="script.js"></script>
+	</head>
+	<body>
+		
+		<nav class="navbar navbar-light bg-light">
+			<div class="container nav justify-content-center">
+				<div class="navbar-brand mb-0 h1">
+					<h3 class="">App de Pesquisa (Cotação do Dólar)</h3>
+				</div>
+			</div>
+		</nav>
+
+		<h3 class="d-flex justify-content-center mt-3">Insira a(s) data(s) desejada(s): </h3>
+
+		<div class="container">
+			<div class="row form-group d-flex justify-content-center mt-3">				
+				<div class="col-sm-4">
+					<input type="text" class="form-control" placeholder="Data Inicial" id="data_inicio"/>
+				</div>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" placeholder="Data Final(Opcional)" id="data_fim" />
+				</div>
+			</div>
+
+			<div class="row form-group mt-3">
+				<div class="col-sm-4">
+					<label>Máximo: </label>
+					<input type="text" class="form-control" placeholder="Alta" readonly id="alta" />
+				</div>
+				<div class="col-sm-4">
+					<label>Mínimo: </label>
+					<input type="text" class="form-control" placeholder="Baixa" readonly id="baixa" />
+				</div>
+				<div class="col-sm-4">
+					<label>Compra: </label>
+					<input type="text" class="form-control" placeholder="Compra" readonly id="compra" />
+				</div>				
+			</div>
+
+			<div class="row form-group mt-3">
+				<div class="col-sm-4">
+					<label>Venda: </label>
+					<input type="text" class="form-control" placeholder="Venda" readonly id="venda" />
+				</div>
+				<div class="col-sm-4">
+					<label>Variação: </label>
+					<input type="text" class="form-control" placeholder="Variação" readonly id="variacao" />
+				</div>
+				<div class="col-sm-4">
+					<label>Porcentagem de Variação: </label>
+					<input type="text" class="form-control" placeholder="Porcentagem de Variação" readonly id="pctVariacao" />
+				</div>
+			</div>
+
+			<div class="mt-5">
+				<button onclick="getPesquisarDolar()" class="btn btn-primary btn-lg">Pesquisar Valor do dólar</button>				
+			</div>
+
+		</div>
+	</body>
+</html>
